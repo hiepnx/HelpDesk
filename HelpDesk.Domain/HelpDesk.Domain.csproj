@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE8AB2BE-43B4-413F-9C28-175D1033900C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpDesk.Domain</RootNamespace>
+    <AssemblyName>HelpDesk.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\Lucene.2.9.2.2\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dto\ColumnSortDirection.cs" />
+    <Compile Include="Dto\IProfile.cs" />
+    <Compile Include="Dto\RuleException.cs" />
+    <Compile Include="Dto\TicketCenterListSettings.cs" />
+    <Compile Include="Dto\TicketListFilterColumn.cs" />
+    <Compile Include="Dto\TicketListSortColumn.cs" />
+    <Compile Include="Dto\UserDisplayPreferences.cs" />
+    <Compile Include="Dto\UserInfo.cs" />
+    <Compile Include="Enums\EditorModes.cs" />
+    <Compile Include="Enums\TicketActivity.cs" />
+    <Compile Include="Enums\TicketCommentFlag.cs" />
+    <Compile Include="Models\aspnet_Applications.cs" />
+    <Compile Include="Models\aspnet_Membership.cs" />
+    <Compile Include="Models\aspnet_Paths.cs" />
+    <Compile Include="Models\aspnet_PersonalizationAllUsers.cs" />
+    <Compile Include="Models\aspnet_PersonalizationPerUser.cs" />
+    <Compile Include="Models\aspnet_Profile.cs" />
+    <Compile Include="Models\aspnet_Roles.cs" />
+    <Compile Include="Models\aspnet_SchemaVersions.cs" />
+    <Compile Include="Models\aspnet_Users.cs" />
+    <Compile Include="Models\aspnet_WebEvent_Events.cs" />
+    <Compile Include="Models\ELMAH_Error.cs" />
+    <Compile Include="Models\Mapping\aspnet_ApplicationsMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_MembershipMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_PathsMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_PersonalizationAllUsersMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_PersonalizationPerUserMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_ProfileMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_RolesMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_SchemaVersionsMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_UsersMap.cs" />
+    <Compile Include="Models\Mapping\aspnet_WebEvent_EventsMap.cs" />
+    <Compile Include="Models\Mapping\ELMAH_ErrorMap.cs" />
+    <Compile Include="Models\Mapping\SettingMap.cs" />
+    <Compile Include="Models\Mapping\TicketAttachmentMap.cs" />
+    <Compile Include="Models\Mapping\TicketCommentMap.cs" />
+    <Compile Include="Models\Mapping\TicketEventNotificationMap.cs" />
+    <Compile Include="Models\Mapping\TicketMap.cs" />
+    <Compile Include="Models\Mapping\TicketTagMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_ApplicationsMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_MembershipUsersMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_ProfilesMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_RolesMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_UsersInRolesMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_UsersMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_WebPartState_PathsMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_WebPartState_SharedMap.cs" />
+    <Compile Include="Models\Mapping\vw_aspnet_WebPartState_UserMap.cs" />
+    <Compile Include="Models\Setting.cs" />
+    <Compile Include="Models\Ticket.cs" />
+    <Compile Include="Models\TicketAttachment.cs" />
+    <Compile Include="Models\TicketComment.cs" />
+    <Compile Include="Models\TicketDeskContext.cs" />
+    <Compile Include="Models\TicketEventNotification.cs" />
+    <Compile Include="Models\TicketTag.cs" />
+    <Compile Include="Models\vw_aspnet_Applications.cs" />
+    <Compile Include="Models\vw_aspnet_MembershipUsers.cs" />
+    <Compile Include="Models\vw_aspnet_Profiles.cs" />
+    <Compile Include="Models\vw_aspnet_Roles.cs" />
+    <Compile Include="Models\vw_aspnet_Users.cs" />
+    <Compile Include="Models\vw_aspnet_UsersInRoles.cs" />
+    <Compile Include="Models\vw_aspnet_WebPartState_Paths.cs" />
+    <Compile Include="Models\vw_aspnet_WebPartState_Shared.cs" />
+    <Compile Include="Models\vw_aspnet_WebPartState_User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ApplicationSettingsRepository.cs" />
+    <Compile Include="Repository\Base\IApplicationSettingsRepository.cs" />
+    <Compile Include="Repository\Base\IDatabaseSchemaManagerRepository.cs" />
+    <Compile Include="Repository\Base\INotificationRepository.cs" />
+    <Compile Include="Repository\Base\ISecurityRepository.cs" />
+    <Compile Include="Repository\Base\ITicketRepository.cs" />
+    <Compile Include="Repository\Base\SecurityRepositoryBase.cs" />
+    <Compile Include="Repository\DatabaseSchemaManagerRepository.cs" />
+    <Compile Include="Repository\NotificationRepository.cs" />
+    <Compile Include="Repository\SqlSecurityRepository.cs" />
+    <Compile Include="Repository\TicketDataDataContext.cs" />
+    <Compile Include="Repository\TicketRepository.cs" />
+    <Compile Include="Services\Base\IApplicationSettingsService.cs" />
+    <Compile Include="Services\Base\IDatabaseSchemaManagerService.cs" />
+    <Compile Include="Services\Base\IEmailHandlerService.cs" />
+    <Compile Include="Services\Base\ISecurityService.cs" />
+    <Compile Include="Services\Base\ITicketService.cs" />
+    <Compile Include="Services\Base\IUserSettingsService.cs" />
+    <Compile Include="Services\DatabaseSchemaManagerService.cs" />
+    <Compile Include="Services\DefaultSmtpEmailHandlerService.cs" />
+    <Compile Include="Services\INotificationQueuingService.cs" />
+    <Compile Include="Services\SecurityService.cs" />
+    <Compile Include="Services\SettingsService.cs" />
+    <Compile Include="Services\TicketSearchService.cs" />
+    <Compile Include="Services\TicketService.cs" />
+    <Compile Include="Services\UserSettingsService.cs" />
+    <Compile Include="Utilities\Markdown.cs" />
+    <Compile Include="Utilities\Pagination\CustomPagination.cs" />
+    <Compile Include="Utilities\Pagination\DelegatePagination.cs" />
+    <Compile Include="Utilities\Pagination\IPagination.cs" />
+    <Compile Include="Utilities\Pagination\LazyPagination.cs" />
+    <Compile Include="Utilities\Pagination\PaginationHelper.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
+    <Compile Include="Utilities\TagUtility.cs" />
+    <Compile Include="Utilities\TicketTextUtility.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

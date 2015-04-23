@@ -1,0 +1,16 @@
+D:\GitHub\HelpDesk\HelpDesk\bin\HelpDesk.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\HelpDesk.pdb
+D:\GitHub\HelpDesk\HelpDesk\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Helpers.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Razor.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.Deployment.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.Razor.dll
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Razor.xml
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.xml
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.Deployment.xml
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Webpages.Razor.xml
+D:\GitHub\HelpDesk\HelpDesk\bin\System.Web.Helpers.xml
+D:\GitHub\HelpDesk\HelpDesk\obj\Debug\HelpDesk.Web.csprojResolveAssemblyReference.cache
+D:\GitHub\HelpDesk\HelpDesk\obj\Debug\HelpDesk.dll
+D:\GitHub\HelpDesk\HelpDesk\obj\Debug\HelpDesk.pdb
