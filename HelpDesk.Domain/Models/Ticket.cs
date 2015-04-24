@@ -46,5 +46,45 @@ namespace HelpDesk.Domain.Models
                 return (IsHtml) ? Details : md.Transform(Details, false);
             }
         }
+        internal string[] GetNotificationSubscribers()
+        {
+            var subs = new List<string>();
+            if (!string.IsNullOrEmpty(PreviousOwner) && !PreviousOwner.Equals(Owner, StringComparison.InvariantCultureIgnoreCase))
+            {
+                subs.Add(PreviousOwner);
+            }
+            if (!string.IsNullOrEmpty(PreviousAssignedUser) && !PreviousAssignedUser.Equals(AssignedTo, StringComparison.InvariantCultureIgnoreCase))
+            {
+                subs.Add(PreviousAssignedUser);
+            }
+            if (!string.IsNullOrEmpty(Owner))
+            {
+                subs.Add(Owner);
+            }
+            if (!string.IsNullOrEmpty(AssignedTo))
+            {
+                subs.Add(AssignedTo);
+            }
+            return subs.ToArray();
+        }
+
+
+        internal string PreviousOwner { get; set; }
+        internal string PreviousAssignedUser { get; set; }
+
+        //protected override void OnPropertyChanging(string property)
+        //{
+        //    if (property == "AssignedTo")
+        //    {
+        //        PreviousAssignedUser = AssignedTo;
+        //    }
+        //    if (property == "Owner")
+        //    {
+        //        PreviousOwner = Owner;
+        //    }
+        //    base.OnPropertyChanging(property);
+        //}
+
+
     }
 }

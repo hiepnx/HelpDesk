@@ -54,7 +54,7 @@ namespace HelpDesk.Domain.Services
 
         #region ITicketService Members
 
-        
+        public INotificationQueuingService Notification { get; private set; }
         public TicketSearchService Search { get; private set; }
         public ISecurityService Security { get; private set; }
 

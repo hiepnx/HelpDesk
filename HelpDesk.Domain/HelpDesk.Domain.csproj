@@ -135,12 +135,16 @@
     <Compile Include="Services\Base\IApplicationSettingsService.cs" />
     <Compile Include="Services\Base\IDatabaseSchemaManagerService.cs" />
     <Compile Include="Services\Base\IEmailHandlerService.cs" />
+    <Compile Include="Services\Base\INotificationQueuingService.cs" />
+    <Compile Include="Services\Base\INotificationSendingService.cs" />
     <Compile Include="Services\Base\ISecurityService.cs" />
     <Compile Include="Services\Base\ITicketService.cs" />
     <Compile Include="Services\Base\IUserSettingsService.cs" />
     <Compile Include="Services\DatabaseSchemaManagerService.cs" />
     <Compile Include="Services\DefaultSmtpEmailHandlerService.cs" />
     <Compile Include="Services\INotificationQueuingService.cs" />
+    <Compile Include="Services\NotificationQueuingService.cs" />
+    <Compile Include="Services\NotificationSendingService.cs" />
     <Compile Include="Services\SecurityService.cs" />
     <Compile Include="Services\SettingsService.cs" />
     <Compile Include="Services\TicketSearchService.cs" />

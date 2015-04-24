@@ -1,0 +1,1 @@
+D:\GibHub\HelpDesk\TicketDesk.Web.Client\obj\Debug\HelpDesk.Web.Client.csprojResolveAssemblyReference.cache
